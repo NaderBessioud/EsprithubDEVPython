@@ -19,11 +19,11 @@ def FacialReco():
     ftp_server.encoding = "utf-8"
 
     try:
-        connection = mysql.connector.connect(host='localhost',
+        connection = mysql.connector.connect(host='192.168.2.176',
                                          database='esprithub',
                                          user='root',
-                                         password='',
-                                         port="3308")
+                                         password='guessitplease',
+                                         port="3306")
 
         cursor = connection.cursor()
         sql_fetch_blob_query = """SELECT username,image from user"""
