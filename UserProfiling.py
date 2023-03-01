@@ -1,6 +1,6 @@
 import ftplib
-import cv2
-from SimpleFacerec import SimpleFacerec
+
+
 import mysql.connector
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
@@ -17,7 +17,7 @@ def profile():
         connection = mysql.connector.connect(host='localhost',
                                          database='esprithub',
                                          user='root',
-                                         password='',
+                                         password='guessitplease',
                                          port="3306")
 
         cursor = connection.cursor()
