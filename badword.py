@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from better_profanity import profanity
-import ftplib
 import mysql.connector
 import json
 
