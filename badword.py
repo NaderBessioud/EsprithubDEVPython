@@ -24,7 +24,7 @@ def profile():
     option=request.args.get('option')
     niveau=request.args.get('niveau')
     try:
-        connection = mysql.connector.connect(host='192.168.2.176',
+        connection = mysql.connector.connect(host='192.168.1.21',
                                          database='esprithub',
                                          user='root',
                                          password='guessitplease',
